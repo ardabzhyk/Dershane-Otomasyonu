@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elit Dershane - Kayıt Ol</title>
+    <link rel="stylesheet" href="kayıtol.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="duyurular.php">Duyurular</a></li>
+            <li><a href="dersler.php">Dersler</a></li>
+            <li><a href="anasayfa.html">Anasayfa</a></li>
+            <li><a href="DersProgramı.php">Ders Programı</a></li>
+            <li><a href="İletisim.html">İletişim</a></li>
+            <li><a href="kayitol.html">Kayıt Ol</a></li>
+            <li><a href="giris.php">Giriş</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Hesap Oluşturun</h2>
+            <form action="kayıtol.php" method="POST">
+                <input type="text" name="ad" placeholder="Adınız" required>
+                <input type="text" name="soyad" placeholder="Soyadınız" required>
+                <input type="email" name="email" placeholder="E-posta" required>
+                <input type="password" name="sifre" placeholder="Şifre" required>
+                <button type="submit">Kayıt Ol</button>
+            </form>            
+        </div>
+    </div>
+</body>
+</html>

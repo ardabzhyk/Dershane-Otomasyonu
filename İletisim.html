@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim Formu</title>
+    <link rel="stylesheet" href="iletisim.css">
+</head>
+<body>
+   
+    <div class="background">
+        <nav class="navbar">
+            <ul>
+                <li><a href="duyurular.php">Duyurular</a></li>
+                <li><a href="dersler.php">Dersler</a></li>
+                <li><a href="anasayfa.html">Anasayfa</a></li>
+                <li><a href="DersProgramı.php">Ders Programı</a></li>
+                <li><a href="İletisim.html">İletişim</a></li>
+                <li><a href="kayitol.html">Kayıt Ol</a></li>
+                <li><a href="giris.php">Giriş</a></li>
+            </ul>
+        </nav>
+
+        <!-- İletişim Formu -->
+        <div class="contact-container">
+            <div class="contact-form">
+                <h2>İletişim Formu</h2>
+                <form action="iletisim.php" method="post">
+                    <label for="ad">Adınız:</label>
+                    <input type="text" id="ad" name="adsoyad" placeholder="Adınızı girin" required>
+
+                    <label for="email">E-posta:</label>
+                    <input type="email" id="eposta" name="eposta" placeholder="E-posta adresinizi girin" required>
+
+                    <label for="mesaj">Mesajınız:</label>
+                    <textarea id="mesaj" name="mesaj" rows="5" placeholder="Mesajınızı yazın" required></textarea>
+
+                    <button type="submit">Gönder</button>
+                </form>
+            </div>
+
+            <!-- İletişim Bilgileri -->
+            <div class="contact-info">
+                <h3>İletişim Bilgilerimiz</h3>
+                <p><strong>Adres:</strong> Elit Sokak No:123,Salihli,Manisa,Türkiye</p>
+                <p><strong>Telefon:</strong> +90 312 123 45 67</p>
+                <p><strong>E-posta:</strong> <a href="mailto:elitdershane@gmail.com">elitdershane@gmail.com</a></p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Elit Dershane. Tüm Hakları Saklıdır.</p>
+        </footer>
+    </div>
+</body>
+</html>

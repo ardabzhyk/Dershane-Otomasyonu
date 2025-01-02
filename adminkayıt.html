@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol</title>
+    <link rel="stylesheet" href="adminkayıt.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="duyurular.php">Duyurular</a></li>
+            <li><a href="dersler.php">Dersler</a></li>
+            <li><a href="anasayfa.html">Anasayfa</a></li>
+            <li><a href="DersProgramı.php">Ders Programı</a></li>
+            <li><a href="İletisim.html">İletişim</a></li>
+            <li><a href="kayitol.html">Kayıt Ol</a></li>
+            <li><a href="giris.php">Giriş</a></li>
+        </ul>
+    </nav>
+    <!-- Ana içerik -->
+    <div class="container">
+        <div class="header">
+            <h1>Kayıt Ol</h1>
+            <p>Lütfen gerekli bilgileri doldurun.</p>
+        </div>
+
+        <!-- Kayıt Formu -->
+        <form action="adminkayıt.php" method="POST">
+            <label for="ad">Ad:</label>
+            <input type="text" id="ad" name="ad" required>
+
+            <label for="soyad">Soyad:</label>
+            <input type="text" id="soyad" name="soyad" required>
+
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="sifre">Şifre:</label>
+            <input type="password" id="sifre" name="sifre" required>
+
+            <label for="rol">Rol Seçin:</label>
+            <select name="rol" id="rol" required>
+                <option value="öğrenci">Öğrenci</option>
+                <option value="öğretmen">Öğretmen</option>
+                <option value="admin">Admin</option>
+            </select>
+
+            <button type="submit">Kayıt Ol</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        © 2024 Elit Dershane. Tüm Hakları Saklıdır.
+    </footer>
+</body>
+</html>
